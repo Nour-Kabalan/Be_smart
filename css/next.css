@@ -1,0 +1,626 @@
+:root {
+    --main-color: #777;
+    --second-color: #777777ab;
+    --third-color: #77777766;
+}
+
+
+
+/* Start Global Ruls */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Global Ruls */
+/* start header */
+.all {
+display: flex;
+justify-content: space-between;
+background-color: white;
+padding: 15px;
+border-bottom: 1px solid var(--main-color);
+max-height: 60.5px;
+}
+.all .part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.all .part1 a:first-child {
+    color: var(--main-color);
+}
+.all .part1 a:nth-child(2) {
+    font-size: 15px;
+    margin: 0 10px;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.all .part1 a:nth-child(2):hover {
+    text-decoration: underline;
+    color: black;
+}
+.all .part1 p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #6c6262;
+    margin: 5px 10px;
+    cursor: default;
+}
+.all .part1 i {
+   color: var(--main-color);
+}
+.all .part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.all .part2 span {
+    font-size: 13px;
+    color: var(--main-color);
+    margin-right: 10px;
+}
+.all .part2 .just{
+    font-size: 13px;
+    color: var(--main-color);
+    margin: 0 10px;
+}
+.all .part2 .link1 {
+    position: relative;
+    font-size: 15px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.all .part2 .link1 i {
+    color: var(--main-color);
+    margin: 0 10px;
+}
+.all .part2 .link1 p {
+    background-color: #6c6262;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: -50px;
+    width: 125px;
+    z-index: 1;
+    display: none;
+}
+.all .part2 .link1 p::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent  #6c6262 transparent;
+    top: -18px;
+    left: 50px;
+}
+.all .part2 .link1:hover p {
+    display: block;
+}
+
+.all .part2 .link2{
+    font-size: 16px;
+    color: var(--main-color);
+    margin: 0 10px;
+}
+.all .part2 .link2:hover {
+    color: black;
+}
+.all .part2 .link3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+.all .part2 .link3:hover {
+    color: black;
+}
+/*End header */
+/*start section*/
+.big {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+flex-wrap: wrap;
+background-color: #77777717;
+height: calc(100vh - 60.5px);
+width: 100vw;
+position: relative;
+}
+.big .content {
+    flex-basis: 65%;
+    height: calc(100% - 15%);
+    display: flex;
+    border: 1px solid #bfaeae;
+    background-color: rgb(205 218 225 / 0%);
+    cursor: default;
+}
+.big .content .part1 {
+    flex-basis: 20%;
+    padding: 40px;
+    background-color: white;
+   
+}
+.big .content .part1 div {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+.big .content .part1 div i {
+    flex-basis: 20%;
+}
+.big .content .part1 div p {
+    flex-basis: 60%;
+    margin-bottom: 40px;
+}
+.big .content .part1 .blue {
+    color: blue;
+    position: relative;
+   
+}
+.big .content .part1 .blue::before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 30%);
+    width: 2px;
+    background-color: blue;
+    left: -41px;
+    top: -6px;
+
+}
+.big .content .part1 .adv {
+    margin-left: 20px;
+}
+.big .content .part1 .pro {
+    position: relative;
+    margin-bottom: 60px;
+}
+.big .content .part1 .pro::before {
+content: "";
+position: absolute;
+width: 100%;
+height: 1px;
+background-color: var(--main-color);
+top: 80px;
+}
+.big .content .part2 {
+    flex-basis: 70%;
+    position: relative;
+    background-color: #007bff08;
+    height: 100%;
+}
+.big .content .part2 .head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 5%;
+    margin-top: 5px;
+}
+.big .content .part2 .head form {
+flex-basis: 40%;
+margin-top: 10px;
+margin-left: 20px;
+position: absolute;
+left: 0;
+pointer-events: none;
+
+}
+.big .content .part2::before {
+    content: "Edit";
+    position: absolute;
+    width: 25px;
+    font-size: 10px;
+    color: var(--main-color);
+    background-color: white;
+    border: 1px solid var(--second-color);
+    right: -10px;
+    top: 125px;
+    z-index: 3;
+    text-align: center;
+    line-height: 10px;
+    padding: 5px;
+}
+.big .content .part2::after {
+    content: "Delete";
+    position: absolute;
+    width: 25px;
+    font-size: 10px;
+    color: var(--main-color);
+    background-color: white;
+    border-left: 1px solid var(--second-color);
+    border-right: 1px solid var(--second-color);
+    border-bottom: 1px solid var(--second-color);
+    right: -10px;
+    top: 147px;
+    z-index: 3;
+    text-align: center;
+    padding: 5px;
+}
+.big .content .part2 .head form input {
+    padding: 10px;
+    font-size: 15px;
+}
+.big .content .part2 .head form input ::placeholder {
+    color: var(--main-color);
+}
+.big .content .part2 .head form i {
+    position: relative;
+    left: -30px;
+    color: var(--main-color);
+}
+.big .content .part2 .head p {
+flex-basis: 20%;
+border: none;
+background-color: blue;
+color: white;
+font-size: 12px;
+padding: 10px 15px;
+margin-top: 10px;
+margin-right: 20px;
+position: absolute;
+right: 0;
+pointer-events: none;
+border-radius: 5px;
+}
+.big .content .part2 .head p::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\2b";
+    position: absolute;
+    right: 3px;
+}
+.big .content .part2 table {
+    background-color: white;
+    position: absolute;
+    width: calc(100% - 5%);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    padding: 10px 20px 10px 10px;
+    height: calc(100% - 65%);
+    pointer-events: none;
+    
+}
+.big .content .part2 table tbody {
+    font-size: 10px;
+}
+.big .content .part2 table tbody td:first-child i {
+font-size: 25px;
+margin-right: 0;
+}
+/* start comment */
+.big .comment {
+    flex-basis: 25%;
+    height: 100%;
+    background-color: red;
+    margin-left: 25px;
+    
+}
+.big .comment .up1 {
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    border-bottom: 1px solid var(--main-color);
+}
+.big .comment .up1 .sequre {
+    width: calc(100% - 10%);
+    background-color: white;
+    color: var(--main-color);
+    font-size: 15px;
+    border: 1px solid var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    padding: 10px;
+}
+.big .comment .up1 .sequre p {
+    font-style: italic;
+}
+.big .comment .up1 .instul{
+    position: relative;
+    font-size: 15px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.big .comment .up1 .instul i {
+    color: var(--main-color);
+    position: absolute;
+    right: 5px;
+    top: -15px;
+}
+.big .comment .up1 .instul p {
+    background-color: #6c6262;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: -8px;
+    padding: 5px;
+    z-index: 1;
+    display: none;
+}
+.big .comment .up1 .instul p::before {
+    content: "";
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent  #6c6262 transparent;
+    top: -14px;
+    left: 33px;
+}
+.big .comment .up1 .instul i:hover{
+    color: black;
+}
+.big .comment .up1 .instul i:hover + p {
+    display: block;
+}
+.big .comment .up1 .first {
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--second-color);
+    position: absolute;
+    bottom: 25px;
+    right: 140px;
+    background-color: white;
+}
+.big .comment .up1 .second {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--second-color);
+    position: absolute;
+    bottom: 19px;
+    right: 40px;
+    background-color: #77777738;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+.big .comment .middle {
+background-color: white;
+width: 100%;
+height: 73%;
+text-align: center;
+padding: 10px;
+}
+.big .comment .middle i {
+    font-size: 100px;
+    color: var(--second-color);
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.big .comment .middle h2 {
+font-size: 20px;
+font-weight: normal;
+}
+.big .comment .middle p {
+font-size: 15px;
+color: var(--second-color);
+margin: 10px 20px;
+}
+.big .comment .down {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 7%;
+    position: relative;
+    border-top: 1px solid var(--main-color);
+    
+}
+.big .comment .down .num1 {
+margin: 0 10px;
+color: var(--third-color);
+font-size: 20px;
+}
+.big .comment .down p {
+font-size: 15px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+left: 50px;
+}
+.big .comment .down .num2 {
+color: var(--third-color);
+font-size: 15px;
+position: absolute;
+right: 60px;
+}
+.big .comment .down .num3 {
+color: var(--third-color);
+font-size: 15px;
+position: absolute;
+right: 30px;
+}
+/* end comment */
+/* start aside */
+aside {
+    flex-basis: 5%;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid var(--main-color);
+}
+aside .icone {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+aside .icone .icone1 {
+    position: relative;
+    font-size: 15px;
+    color: var(--main-color);
+} 
+aside .icone .icone1 i {
+    margin-right: 10px;
+    margin-top: 10px;
+    color: var(--main-color);
+    background-color: #7777774d;
+    padding: 10px;
+    border-radius: 6px;
+}
+aside .icone .icone1 p {
+    background-color: #6c6262;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    top: 15px;
+    right: 55px;
+    z-index: 1;
+    width: 145px;
+    padding: 5px;
+    display: none;
+}
+aside .icone .icone1 p::before {
+    content: "";
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent #6c6262 ;
+    top: 5px;
+    right: -13px;
+}
+aside .icone .icone1 i:hover + p {
+    display: block;
+}
+aside .icone .icone2 {
+position: relative;
+font-size: 15px;
+color: var(--main-color);
+}
+aside .icone .icone2 i{
+    margin-right: 10px;
+    color: var(--main-color);
+    padding: 10px;
+}
+aside .icone .icone2 p {
+    background-color: #6c6262;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    top: 5px;
+    right: 57px;
+    z-index: 1;
+    width: 93px;
+    padding: 5px;
+    display: none;
+}
+aside .icone .icone2 p::before {
+    content: "";
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent #6c6262 ;
+    top: 5px;
+    right: -13px;
+}
+aside .icone .icone2 i:hover {
+    color: black;
+}
+aside .icone .icone2 i:hover + p {
+    display: block;
+}
+
+/* end aside */
+/* start foot */
+.big .foot1 {
+    position: absolute;
+    font-size: 13px;
+    color: var(--main-color);
+    left: 15px;
+    bottom: 15px;
+    text-decoration: none;
+    
+}
+.big .foot1:hover {
+    color: black;
+}
+.big .ifoot1 {
+    position: absolute;
+    font-size: 13px;
+    color: var(--main-color);
+    left: 150px;
+    bottom: 15px;
+    
+}
+.big .ifoot1:hover {
+    color: black;
+}
+.big .ifoot2 {
+    position: absolute;
+    font-size: 13px;
+    color: var(--main-color);
+    left: 370px;
+    bottom: 15px;
+}
+.big .ifoot2:hover {
+    color: black;
+}
+.big a .ifoot3 {
+    position: absolute;
+    font-size: 13px;
+    color: var(--main-color);
+    left: 400px;
+    bottom: 15px;
+}
+.big .ifoot3:hover {
+    color: black;
+}
+.big .foot2 {
+    position: absolute;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--main-color);
+    left: 420px;
+    bottom: 15px;
+}
+.big a .ifoot4 {
+    position: absolute;
+    font-size: 13px;
+    color: var(--main-color);
+    left: 465px;
+    bottom: 15px;
+}
+.big .ifoot4:hover {
+    color: black;
+}
+.big .foot3 {
+    position: absolute;
+    font-size: 13px;
+    color: var(--second-color);
+    right: 500px;
+    bottom: 15px;
+}
+/* end foot */
+/*end section*/
